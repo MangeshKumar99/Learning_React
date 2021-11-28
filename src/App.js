@@ -12,6 +12,7 @@ import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
 import LifecycleB from './components/LifecycleB';
 import ParentComp from './components/ParentComp';
+import Post from './components/Post';
 
 
 class App extends React.Component{
@@ -31,7 +32,8 @@ class App extends React.Component{
       */}
       {/* <Form/>
       <LifecycleA/> */}
-      <ParentComp/>
+      {/* <ParentComp/> */}
+      <Post/>
       
 
   
