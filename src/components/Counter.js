@@ -8,30 +8,31 @@ import React, { Component } from 'react'
               counter:0
          }
      }
-    incrementCounter(){
+    incrementCounter=()=>{
         this.setState({
             counter:this.state.counter+1
         })
     }
-    decrementCounter(){
+    decrementCounter=()=>{
         this.setState({
             counter:this.state.counter-1
         })
     }
-    resetCounter(){
+    resetCounter=()=>{
         this.setState({
             counter:0
         })
     }
      
     render() {
+        console.log("render")
         return (
             <div>
                 <h1>Counter : {this.state.counter}</h1>
                 <div>
-                    <button onClick={()=>this.incrementCounter()}>Increment</button>
-                    <button onClick={()=>this.decrementCounter()}>Decrement</button>
-                    <button onClick={()=>this.resetCounter()}>Reset</button>
+                    <button onClick={this.incrementCounter}>Increment</button>
+                    <button onClick={this.decrementCounter}>Decrement</button>
+                    <button onClick={this.resetCounter}>Reset</button>
                 </div>
                 
             </div>
