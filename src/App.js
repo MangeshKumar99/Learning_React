@@ -26,6 +26,7 @@ import Course from './components/Course';
 import Bundle from './components/Bundle';
 import CourseId from './components/CourseId';
 import Dasboard from './components/Dasboard';
+import ComponentTwo from './components/ComponentTwo';
 
 
 
@@ -51,7 +52,7 @@ class App extends React.Component {
         {/* <AllReactHooks/> */}
 
         {/* <Counter/> */}
-        <Router>
+        {/* <Router>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dasboard/>}/ >
@@ -69,7 +70,8 @@ class App extends React.Component {
 
 
 
-        </Router>
+        </Router> */}
+        <ComponentTwo/>
 
 
 
